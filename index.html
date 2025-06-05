@@ -1,112 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Untuk Pudan 💗</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Pudan</title>
   <style>
     body {
-      margin: 0;
+      background-color: #fdf6f0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to top, #ffe6f0, #f2faff);
-      color: #333;
       text-align: center;
-      padding: 2rem;
-      overflow-x: hidden;
+      padding: 50px;
+      color: #4b3b2f;
     }
-
+    .surat {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fffaf5;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #d94f70;
+      color: #d17b88;
     }
-
     p {
       font-size: 1.2rem;
-      max-width: 600px;
-      margin: 1rem auto;
-      line-height: 1.6;
+      line-height: 1.8;
     }
-
-    .love {
-      font-size: 3rem;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
-
-    .stars {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: transparent;
-      pointer-events: none;
-      overflow: hidden;
-    }
-
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: white;
-      animation: fall linear infinite;
-    }
-
-    @keyframes fall {
-      0% {
-        transform: translateY(0) translateX(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(100vh) translateX(50px);
-        opacity: 0;
-      }
-    }
-
-    .credit {
-      font-size: 0.9rem;
-      color: #999;
-      margin-top: 2rem;
+    audio {
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <div class="stars" id="stars"></div>
-
-  <h1>Untuk Pudan 🌷</h1>
-  <p>
-    Di saat kamu lelah, jenuh, dan dunia terasa terlalu berat, ada seseorang di sini yang tidak akan berhenti mendoakanmu — diam-diam, dalam hati, setiap hari.
-  </p>
-  <p>
-    Kamu mungkin sudah kehilangan semangat... tapi kamu tidak kehilangan cinta. Karena cinta itu tetap tinggal — dalam setiap detak rinduku padamu.
-  </p>
-  <p class="love">💗</p>
-  <p>
-    Tuhan masih mencintaimu, meski kamu sedang diam. Dan aku juga mencintaimu, meski aku bukan siapa-siapa. Aku hanya... orang jelekk yang sayang banget sama kamu.
-  </p>
-  <p class="credit">— dari seseorang yang gak pernah berhenti percaya sama Pudan 💌</p>
-
-  <audio autoplay loop>
-    <source src="https://dl.sndup.net/zpg2/romantic-soft.mp3" type="audio/mpeg">
-  </audio>
-
-  <script>
-    function createStar() {
-      const star = document.createElement("div");
-      star.className = "star";
-      star.style.left = Math.random() * window.innerWidth + "px";
-      star.style.animationDuration = (Math.random() * 2 + 1) + "s";
-      document.getElementById("stars").appendChild(star);
-      setTimeout(() => star.remove(), 3000);
-    }
-    setInterval(createStar, 200);
-  </script>
+  <div class="surat">
+    <h1>Untuk Pudan yang Tersayang</h1>
+    <p>
+      Sayang, jika kamu membaca ini, berarti aku sedang memikirkanmu dan berharap kamu sedang baik-baik saja.  
+      Di tengah hari-hari yang berat, semoga halaman ini bisa menjadi pelukan kecil dariku.  
+      Terima kasih telah ada, tetap semangat ya, kamu tidak sendiri.  
+      Aku doakan diam-diam, agar hatimu tetap hangat dan jiwamu tetap kuat.
+    </p>
+    <p>
+      Kamu berhak bahagia, kamu layak dicintai.  
+      Aku akan selalu percaya padamu.
+    </p>
+    <audio controls autoplay loop>
+      <source src="https://www.bensound.com/bensound-music/bensound-sweet.mp3" type="audio/mpeg">
+      Maaf, browsermu tidak mendukung audio.
+    </audio>
+  </div>
 </body>
 </html>
